@@ -1,0 +1,53 @@
+<html>
+    <title>Number system</title>
+    <br>
+    <head><h1 id="head" style="color: rgb(240, 236, 21);" class="text-center">Number system Converter</h1></head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js">
+    <link rel="stylesheet" href="style.css">
+    <body>
+        <div class="loader">
+            <img src="back.gif">
+        </div>
+        <br>
+        <div class="text-center">
+            <h2 style="color: rgb(218, 218, 208);">Enter the number you want to convert</h2>
+            <br>
+            <input class="firstinput" placeholder="Enter the number" id="number" type="text">
+            <select class="box firstinput1" placeholder=" Datatype" id="datatype">
+                <option value=""> Choose Datatype</option>
+                <option value="D">Decimal</option>
+                <option value="B">Binary</option>
+                <option value="O">Octal</option>
+                <option value="H">Hexadecimal</option>
+            </select>
+            <button type="button" class="btn btn-lg btn-success" onclick="calculate()">Submit</button>
+        </div>
+        <br>
+        <br>
+        <div class="text-center">
+            <div>
+                <h2 style="color: rgb(190, 37, 37);">Decimal : <input disabled class="input1" id="D_display"></h2>
+                <br>
+            </div>
+            <div>
+                <h2 style="color: rgb(211, 129, 35);">Binary : <input disabled class="input2" id="B_display"></h2>
+                <br>
+            </div>
+            <div>
+                <h2 style="color: rgb(78, 235, 31);">Octal : <input disabled class="input3" id="O_display"></h2>
+                <br>
+            </div>
+            <div>
+                <h2 style="color: rgb(39, 223, 207);">Hexadecimal : <input disabled class="input4" id="H_display"></h2>
+                <br>
+            </div>
+        </div>
+        <div id="clear" class="text-center">
+            <button  type="button" class="btn btn-lg btn-secondary" id="reset" onclick="clrscr()">Reset</button>
+        </div>
+    <script src="script.js"></script>
+    </body>
+</html>
+ 
+
